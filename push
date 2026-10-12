@@ -1,0 +1,7 @@
+
+find . -name ".DS_Store" -delete
+
+read commit_msg
+git add .
+git commit -m "Update $(date '+%Y-%m-%d %H:%M:%S'): $commit_msg"
+git push origin main
